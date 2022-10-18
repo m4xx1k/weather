@@ -243,7 +243,9 @@ function Map({isLoaded}) {
         console.log(coordinates.lat, coordinates.lng)
         await axios
             .get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&language=en&key=${GOOGLE_API_KEY}`)
-            .then(res => dispatch(setCity(res.data.plus_code.compound_code.split(" ")[1])))
+            .then(res => {
+                dispatch(setCity(res.data.plus_code.compound_code.split(" ")[1]))
+            })
             .catch(e => console.log(e))
     }
 

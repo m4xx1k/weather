@@ -53,7 +53,7 @@ function App() {
     })
 
     useEffect(() => {
-        console.log(API_GOOGLE_KEY)
+        console.log("app.js ue")
         const fetchForecast = async () => {
             await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?lat=${position.lat}&lon=${position.lng}&key=b3e83458ab6d4407a39ee055ab94fc0d`)
                 .then((res) => {

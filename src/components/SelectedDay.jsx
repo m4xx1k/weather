@@ -8,7 +8,6 @@ const SelectedDay = ({data, city}) => {
         <Flex bg="#fff"
               color="#000"
               w={{base: "96%", md: "25%"}}
-              h={{base:"180px", md:"auto"}}
               border="1px #fff solid"
               borderRadius=".3em"
               justifyContent="space-around"

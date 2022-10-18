@@ -28,42 +28,43 @@ const Chart = ({forecast}) => {
     const [data, setData] = useState(initialData)
 
     useEffect(() => {
-            setLabels(forecast.map(elem => `${elem.datetime.split("-")[2]} ${elem.month}`))
-            let newData;
-            switch (mode) {
-                case "Temperature °C":
-                    newData = forecast.map(elem => elem.temp)
-                    break
-                case "Wind m/s":
-                    newData = forecast.map(elem => elem.wind_spd)
-                    break
-                case "Clouds %":
-                    newData = forecast.map(elem => elem.clouds)
-                    break
-                case "Precipitation %":
-                    newData = forecast.map(elem => elem.pop)
-                    break
-                case "Humidity %":
-                    newData = forecast.map(elem => elem.rh)
-                    break
-                default:
-                    // eslint-disable-next-line no-unused-vars
-                    newData = forecast.map(elem => elem.temp)
-            }
-            setData({
-                labels,
-                datasets: [
-                    {
-                        borderColor: '#634CFF',
-                        backgroundColor: '#FFFFFF)',
-                        label: mode,
-                        data: newData,
+        console.log("chart ue")
+        setLabels(forecast.map(elem => `${elem.datetime.split("-")[2]} ${elem.month}`))
+        let newData;
+        switch (mode) {
+            case "Temperature °C":
+                newData = forecast.map(elem => elem.temp)
+                break
+            case "Wind m/s":
+                newData = forecast.map(elem => elem.wind_spd)
+                break
+            case "Clouds %":
+                newData = forecast.map(elem => elem.clouds)
+                break
+            case "Precipitation %":
+                newData = forecast.map(elem => elem.pop)
+                break
+            case "Humidity %":
+                newData = forecast.map(elem => elem.rh)
+                break
+            default:
+                // eslint-disable-next-line no-unused-vars
+                newData = forecast.map(elem => elem.temp)
+        }
+        setData({
+            labels,
+            datasets: [
+                {
+                    borderColor: '#634CFF',
+                    backgroundColor: '#FFFFFF)',
+                    label: mode,
+                    data: newData,
 
-                    }
-                ]
-            })
+                }
+            ]
+        })
 
-        },[mode])
+    }, [mode])
 
     return (<>
         <Select variant='outline' h="1m" w="40%" m={1} bg="#fff" onChange={(e) => setMode(e.target.value)}>
