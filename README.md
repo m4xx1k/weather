@@ -19,20 +19,20 @@ Technology stack:
 
 How to run:
 
-## 1.Download this repo
+### 1.Download this repo
 
-## 2.Run in terminal 
+### 2.Run in terminal 
 ```vim 
 $ npm i
 ```
 
-## 3. Create .env file and add the line: REACT_APP_API_GOOGLE_KEY="paste here yours google api key for map"
+### 3. Create .env file and add the line: REACT_APP_API_GOOGLE_KEY="paste here yours google api key for map"
 
-## 4. Run in terminal 
+### 4. Run in terminal 
 ```vim
 npm start
 ```
-## 5. Go to "localhost:3000"
+### 5. Go to "localhost:3000"
 
 (or run 
 ```vim 
