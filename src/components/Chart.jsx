@@ -65,7 +65,7 @@ const Chart = ({forecast}) => {
             ]
         })
 
-    }, [mode])
+    }, [mode, forecast])
 
     return (<>
         <Select variant='outline' h="1m" w="40%" m={1} bg="#fff" onChange={(e) => setMode(e.target.value)}>
