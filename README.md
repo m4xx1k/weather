@@ -2,17 +2,17 @@
  
 Technology stack:
 
-1.ChakraUI
+1.[ChakraUI](https://chakra-ui.com)
 
-2. Redux Toolkit
+2. [Redux Toolkit](https://redux-toolkit.js.org)
 
-3. Google Api
+3. [Google Api](https://console.cloud.google.com)
 
-4. Axios
+4. [Axios](https://axios-http.com)
 
-5. Chart.js
+5. [Chart.js](https://www.chartjs.org)
 
-6. Swiper
+6. [Swiper](https://swiperjs.com)
 
 
 How to run:
