@@ -106,6 +106,9 @@ function App() {
                 </Box>
 
             </Flex>
+            <Flex background="#fff" fontSize="1.2em" p={1} display="inline-block" borderRadius="12px">
+                 Developed by <a style={{marginLeft:5, color:"#634CFF", textDecoration:"underline"}} target="_blank" href='https://github.com/m4xx1k'> m4xx1k </a>
+            </Flex>
 
         </Box>)
 }
