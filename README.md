@@ -1,6 +1,4 @@
-## https://weather16.netlify.com
-
-WEATHER FORECAST WEB APPLICATION
+ ## [WEATHER FORECAST WEB APPLICATION](https://weather16.netlify.com)
  
 Technology stack:
 
