@@ -55,7 +55,7 @@ function App() {
     useEffect(() => {
         console.log("app.js ue")
         const fetchForecast = async () => {
-            await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?lat=${position.lat}&lon=${position.lng}&key=b3e83458ab6d4407a39ee055ab94fc0d`)
+            await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?lat=${position.lat}&lon=${position.lng}&key=c4a67a6e5cc2402cab1d2c95dec4ebdd`)
                 .then((res) => {
                     const modifiedData = res.data.data.map((elem) => {
                         return {
