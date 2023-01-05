@@ -21,9 +21,7 @@ How to run:
 
 download this repo
 
-run in terminal ```vim
-$ npm i
-```
+run in terminal ```vim $ npm i```
 
 create .env file and add the line: REACT_APP_API_GOOGLE_KEY="paste here yours google api key for map"
 
