@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {useEffect, useState} from "react";
 import {Box, Select} from "@chakra-ui/react";
 import {
@@ -64,7 +65,7 @@ const Chart = ({forecast}) => {
             ]
         })
 
-    }, [mode, forecast, labels])
+    }, [mode])
 
     return (<>
         <Select variant='outline' h="1m" w="40%" m={1} bg="#fff" onChange={(e) => setMode(e.target.value)}>
